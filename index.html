@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1>Library</h1>
+      <div class="bookContainer">
+        Currently empty :(
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="header">New Book</div>
+      <form class="sidebar-form" method="POST" action="">
+        <label for="titleInput">Book Title:</label>
+        <input type="text" name="titleInput" id="titleInput">
+        <label for="authorInput">Author:</label>
+        <input type="text" name="authorInput" id="authorInput">
+        <label for="pagesInput">Page Length:</label>
+        <input type="text" name="pagesInput" id="pagesInput">
+        <button id="addBookBtn" type="submit">Add Book!</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

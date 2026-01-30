@@ -1,0 +1,108 @@
+body{
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+.container{
+  display:grid;
+  justify-items: center;
+  grid-template-columns: 3fr 1fr;
+  height:100vh;
+}
+
+.bookContainer{
+  display: grid;
+  align-self: center;
+  grid-template-columns: repeat(5, 150px);
+  grid-template-rows: repeat(5, 150px);
+}
+
+.bookContainer > div{
+  border: 1px solid black;
+}
+
+.card{
+  display: flex;
+  padding: 1rem 0;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.card * {
+  text-align: center;
+}
+
+.card .title{
+  font-weight: 700;
+}
+
+.card .author{
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.card .pages{
+  margin: 1rem 0 0 0;
+  font-size: 0.8rem;
+}
+
+.card .id{
+  font-size: 0.6rem;
+  margin: 1rem 0 0 0;
+}
+
+.card .deleteButton{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.card .deleteButton:hover{
+  background-color: red;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 30px;
+  border-left: 3px solid gray;
+  justify-content: center;
+}
+
+.sidebar .header{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sidebar-form{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  row-gap: 30px;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.sidebar-form label{
+  justify-self: start;
+  font-size: 1.1rem;
+}
+
+.sidebar-form input{
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.sidebar-form button{
+  grid-column:1/3;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 1rem;
+}
