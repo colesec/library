@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container">
-    <div>
+    <div class="libraryContainer">
       <h1>Library</h1>
       <div class="bookContainer">
         Currently empty :(
@@ -23,8 +23,11 @@
         <input type="text" name="authorInput" id="authorInput">
         <label for="pagesInput">Page Length:</label>
         <input type="text" name="pagesInput" id="pagesInput">
+        <label for="readInput">Read?</label>
+        <input type="checkbox" name="readInput" id="readInput">
         <button id="addBookBtn" type="submit">Add Book!</button>
       </form>
+      <div class="error hide">All attributes must be filled out!</div>
     </div>
   </div>
   <script src="script.js"></script>
